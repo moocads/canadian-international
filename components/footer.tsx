@@ -1,0 +1,202 @@
+'use client'
+
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react'
+
+const quickLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Contact Us', href: '/contact' },
+  { label: 'Online Learning Platform', href: '/online-learning' },
+  { label: 'Privacy Policy', href: '/privacy' },
+]
+
+const courses = [
+  { label: 'English Courses', href: '/courses/english' },
+  { label: 'French Courses', href: '/courses/french' },
+  { label: 'IELTS Preparation', href: '/test-preparation/ielts' },
+  { label: 'TEF Canada Preparation', href: '/test-preparation/tef' },
+  { label: 'Online Classes', href: '/courses/online' },
+]
+
+const socialLinks = [
+  { icon: Facebook, href: '#', label: 'Facebook' },
+  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Youtube, href: '#', label: 'YouTube' },
+  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+]
+
+const galleryImages = [
+  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=200&h=200&fit=crop',
+]
+
+export function Footer() {
+  return (
+    <footer className="bg-background">
+      {/* Photo Gallery Strip */}
+      <div className="overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex"
+        >
+          {galleryImages.map((src, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-1/3 md:w-1/6 aspect-square"
+            >
+              <div
+                className="w-full h-full bg-cover bg-center"
+                style={{ backgroundImage: `url(${src})` }}
+              />
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Main Footer */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* About */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                <span className="text-xl font-bold text-secondary">CIC</span>
+              </div>
+              <div>
+                <p className="font-bold text-primary leading-tight">Canadian International</p>
+                <p className="text-sm text-muted-foreground">College</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              A college distinguished by its methodology and cultural approach. Building futures through quality language education in Toronto.
+            </p>
+            <div className="flex gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  className="w-10 h-10 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+                  aria-label={social.label}
+                >
+                  <social.icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <h3 className="text-lg font-bold text-primary mb-6">Useful Links</h3>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Courses */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <h3 className="text-lg font-bold text-primary mb-6">Our Courses</h3>
+            <ul className="space-y-3">
+              {courses.map((course) => (
+                <li key={course.label}>
+                  <Link
+                    href={course.href}
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {course.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Contact */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <h3 className="text-lg font-bold text-primary mb-6">Get in Touch</h3>
+            <ul className="space-y-4">
+              <li>
+                <a
+                  href="tel:+14165550123"
+                  className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Phone className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                  <span>+1 (416) 555-0123</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@cicollege.ca"
+                  className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                  <span>info@cicollege.ca</span>
+                </a>
+              </li>
+              <li>
+                <div className="flex items-start gap-3 text-muted-foreground">
+                  <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                  <span>123 College Street, Suite 200, Toronto, Ontario, M5G 1L5</span>
+                </div>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-border">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Canadian International College. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Terms of Service
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
