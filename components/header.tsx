@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown, Phone, Mail } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 
 const navLinks = [
@@ -15,8 +14,6 @@ const navLinks = [
     children: [
       { label: 'English Courses', href: '/courses/english' },
       { label: 'French Courses', href: '/courses/french' },
-      { label: 'Intensive Programs', href: '/courses/intensive' },
-      { label: 'Online Classes', href: '/courses/online' },
     ],
   },
   {
@@ -25,12 +22,11 @@ const navLinks = [
     children: [
       { label: 'IELTS', href: '/test-preparation/ielts' },
       { label: 'CELPIP', href: '/test-preparation/celpip' },
-      { label: 'TEF Canada', href: '/test-preparation/tef' },
-      { label: 'TCF Canada', href: '/test-preparation/tcf' },
+      { label: 'TEF Canada', href: '/test-preparation/tef-canada' },
+      { label: 'TCF Canada', href: '/test-preparation/tcf-canada' },
     ],
   },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'About', href: '/about' }
 ]
 
 export function Header() {
@@ -112,12 +108,6 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold">
-              Book Assessment
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -164,9 +154,6 @@ export function Header() {
                     )}
                   </div>
                 ))}
-                <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold">
-                  Book Assessment
-                </Button>
               </div>
             </motion.div>
           )}

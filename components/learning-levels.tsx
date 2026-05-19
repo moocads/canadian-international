@@ -1,8 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 
 const levels = [
   {
@@ -74,31 +72,10 @@ export function LearningLevels() {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3 pr-14">{level.name}</h3>
               <p className="text-muted-foreground leading-relaxed">{level.description}</p>
-              <div className="mt-4 flex items-center text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                Learn more <ArrowRight className="ml-2 h-4 w-4" />
-              </div>
             </motion.div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="text-center"
-        >
-          <p className="text-muted-foreground mb-6">
-            Before starting your course, students may complete a level assessment so we can recommend the most suitable class.
-          </p>
-          <Button
-            size="lg"
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold"
-          >
-            Book a Level Assessment
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </motion.div>
       </div>
     </section>
   )

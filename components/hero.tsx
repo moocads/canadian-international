@@ -1,7 +1,8 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const welcomeWords = [
@@ -48,20 +49,16 @@ export function Hero() {
               Canadian International College is a Toronto-based language school offering practical English and French courses, intensive language training, and test preparation programs for students, newcomers, and working professionals.
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <div className="mt-10">
               <Button
+                asChild
                 size="lg"
                 className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold text-lg px-8"
               >
-                Explore Our Courses
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold text-lg px-8"
-              >
-                Book a Level Assessment
+                <Link href="/courses">
+                  Explore Our Courses
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
             </div>
 
@@ -77,7 +74,7 @@ export function Hero() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <div className="aspect-video bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800')] bg-cover bg-center" />
+                <div className="absolute inset-0 bg-[url('/images/banner-2.jpg')] bg-cover bg-center" />
                 <div className="absolute inset-0 bg-primary/30" />
               
               </div>

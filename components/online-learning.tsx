@@ -15,7 +15,7 @@ const features = [
     icon: Settings,
     title: 'Mock Tests',
     description:
-      'Designed to familiarize you with the format and interface of the real exam before test day, with an assessment of your level at the end.',
+      'Designed to familiarize you with the format and interface of the real exam before test day, with progress tracking throughout your preparation.',
   },
   {
     icon: Pencil,
@@ -25,8 +25,8 @@ const features = [
   },
   {
     icon: Users,
-    title: 'Registration for Test Preparation',
-    description: 'Simple registration at a budget-friendly price: Starting from $50',
+    title: 'Affordable Online Access',
+    description: 'Flexible online access at a budget-friendly price: Starting from $50',
   },
 ]
 

@@ -8,7 +8,6 @@ import { WhoWeHelp } from '@/components/who-we-help'
 import { LearningLevels } from '@/components/learning-levels'
 import { StudyInToronto } from '@/components/study-in-toronto'
 import { HowItWorks } from '@/components/how-it-works'
-import { Newsletter } from '@/components/newsletter'
 import { CTASection } from '@/components/cta-section'
 import { ContactSection } from '@/components/contact-section'
 import { Footer } from '@/components/footer'
@@ -25,10 +24,10 @@ export default function HomePage() {
       <WhoWeHelp />
       <LearningLevels />
       <StudyInToronto />
+            <CTASection />
       <HowItWorks />
-      <CTASection />
-      <Newsletter />
-      <ContactSection />
+
+
       <Footer />
     </main>
   )

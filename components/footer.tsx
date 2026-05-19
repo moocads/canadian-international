@@ -16,7 +16,8 @@ const courses = [
   { label: 'English Courses', href: '/courses/english' },
   { label: 'French Courses', href: '/courses/french' },
   { label: 'IELTS Preparation', href: '/test-preparation/ielts' },
-  { label: 'TEF Canada Preparation', href: '/test-preparation/tef' },
+  { label: 'TEF Canada Preparation', href: '/test-preparation/tef-canada' },
+  { label: 'TCF Canada Preparation', href: '/test-preparation/tcf-canada' },
   { label: 'Online Classes', href: '/courses/online' },
 ]
 
@@ -28,12 +29,12 @@ const socialLinks = [
 ]
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=200&h=200&fit=crop',
+  '/images/footer-01.jpg',
+  '/images/footer-02.jpg',
+  '/images/footer-03.jpg',
+  '/images/footer-04.jpg',
+  '/images/footer-05.jpg',
+  '/images/footer-06.jpg'
 ]
 
 export function Footer() {

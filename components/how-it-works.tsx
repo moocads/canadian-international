@@ -1,15 +1,14 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ClipboardCheck, BookOpen, Rocket } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Compass, BookOpen, Rocket } from 'lucide-react'
 
 const steps = [
   {
-    icon: ClipboardCheck,
+    icon: Compass,
     number: '01',
-    title: 'Book an Assessment',
-    description: 'Tell us your learning goal and complete a level assessment.',
+    title: 'Explore Our Programs',
+    description: 'Browse English, French, and test preparation courses to find the right fit for your goals.',
   },
   {
     icon: BookOpen,
@@ -78,20 +77,6 @@ export function HowItWorks() {
           </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.6 }}
-          className="text-center mt-16"
-        >
-          <Button
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold text-lg px-8"
-          >
-            Contact Us Today
-          </Button>
-        </motion.div>
       </div>
     </section>
   )

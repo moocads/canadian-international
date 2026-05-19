@@ -37,7 +37,6 @@ const courses = {
       time: '10:00 a.m. - 1:00 p.m.',
       duration: '10 weeks',
       description: 'Flexible weekend learning without affecting your weekday schedule.',
-      price: '$240',
       image: '/images/weelend-english-workshop.jpg',
     },
   ],
@@ -66,7 +65,6 @@ const courses = {
       time: '2:00 p.m. - 5:00 p.m.',
       duration: '8 weeks',
       description: 'Practice speaking French in real-life scenarios.',
-      price: '$220',
       image: '/images/conversation-french.jpg',
     },
   ],
@@ -77,7 +75,6 @@ const courses = {
       time: '6:00 p.m. - 8:30 p.m.',
       duration: '8 weeks',
       description: 'Comprehensive preparation for all IELTS modules.',
-      price: '$450',
       image: '/images/ielts-preparation.jpg',
     },
     {
@@ -86,7 +83,6 @@ const courses = {
       time: '7:00 p.m. - 9:00 p.m.',
       duration: '10 weeks',
       description: 'Master the TEF Canada test with expert guidance.',
-      price: '$420',
       image: '/images/tef-canada-preparation.jpg',
     },
     {
@@ -95,7 +91,6 @@ const courses = {
       time: '10:00 a.m. - 1:00 p.m.',
       duration: '6 weeks',
       description: 'Targeted preparation for CELPIP success.',
-      price: '$380',
       image: '/images/celpip-preparation.jpg',
     },
   ],
@@ -165,9 +160,9 @@ export function CoursesSection() {
               >
                 <div className="relative h-64 bg-gradient-to-br bg-cover bg-center from-primary/20 to-primary/5 flex items-center justify-center" style={{ backgroundImage: `url(${course.image})` }}>
                   <BookOpen className="h-16 w-16 text-primary/30" />
-                  <span className="absolute bottom-4 right-4 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg font-bold text-lg">
+                  {/* <span className="absolute bottom-4 right-4 bg-secondary text-secondary-foreground px-4 py-2 rounded-lg font-bold text-lg">
                     {course.price}
-                  </span>
+                  </span> */}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">
