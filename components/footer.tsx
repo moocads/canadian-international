@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react'
+import Image from 'next/image'
 
 const quickLinks = [
   { label: 'Home', href: '/' },
@@ -73,8 +74,8 @@ export function Footer() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-xl font-bold text-secondary">CIC</span>
+              <div className="w-16 h-16  rounded-lg flex items-center justify-center">
+                <Image src="/cil-logo.png" alt="Canadian International College" width={68} height={68} />
               </div>
               <div>
                 <p className="font-bold text-primary leading-tight">Canadian International</p>

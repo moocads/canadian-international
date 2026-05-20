@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, Calendar, Clock, BookOpen } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const courseCategories = [
   { id: 'english', label: 'English', flag: '🇬🇧' },
@@ -21,6 +22,7 @@ const courses = {
       description: 'Intensive morning classes for rapid English improvement.',
       price: '$320',
       image: '/images/morning-english.jpg',
+      link: '/courses/english',
     },
     {
       title: 'Evening English Classes',
@@ -30,6 +32,7 @@ const courses = {
       description: 'Perfect for working professionals who want to study after work.',
       price: '$280',
       image: '/images/evening-english.jpg',
+      link: '/courses/english',
     },
     {
       title: 'Weekend English Workshop',
@@ -38,6 +41,7 @@ const courses = {
       duration: '10 weeks',
       description: 'Flexible weekend learning without affecting your weekday schedule.',
       image: '/images/weelend-english-workshop.jpg',
+      link: '/courses/english',
     },
   ],
   french: [
@@ -48,7 +52,8 @@ const courses = {
       duration: '12 weeks',
       description: 'Start your French journey with foundational grammar and vocabulary.',
       price: '$300',
-      image: '/images/beginners-french.jpg',
+      image: '/images/beginners-french.jpg',  
+      link: '/courses/french',
     },
     {
       title: 'Intensive French Program',
@@ -57,7 +62,8 @@ const courses = {
       duration: '8 weeks',
       description: 'Fast-track your French skills with our intensive program.',
       price: '$380',
-      image: '/images/intensive-french-02.jpg',
+      image: '/images/intensive-french-02.jpg', 
+      link: '/courses/french',
     },
     {
       title: 'French Conversation Class',
@@ -66,6 +72,7 @@ const courses = {
       duration: '8 weeks',
       description: 'Practice speaking French in real-life scenarios.',
       image: '/images/conversation-french.jpg',
+      link: '/courses/french',
     },
   ],
   'test-prep': [
@@ -76,6 +83,7 @@ const courses = {
       duration: '8 weeks',
       description: 'Comprehensive preparation for all IELTS modules.',
       image: '/images/ielts-preparation.jpg',
+      link: '/test-preparation/ielts',
     },
     {
       title: 'TEF Canada Preparation',
@@ -84,6 +92,7 @@ const courses = {
       duration: '10 weeks',
       description: 'Master the TEF Canada test with expert guidance.',
       image: '/images/tef-canada-preparation.jpg',
+      link: '/test-preparation/tef-canada',
     },
     {
       title: 'CELPIP Preparation',
@@ -92,6 +101,7 @@ const courses = {
       duration: '6 weeks',
       description: 'Targeted preparation for CELPIP success.',
       image: '/images/celpip-preparation.jpg',
+      link: '/test-preparation/celpip',
     },
   ],
 }
@@ -183,9 +193,11 @@ export function CoursesSection() {
                       <span>{course.duration}</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                    <Link href={course.link}>
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </motion.div>
@@ -203,9 +215,12 @@ export function CoursesSection() {
           <Button
             size="lg"
             className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold"
+            asChild
           >
+            <Link href="/courses">
             View All Courses
             <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
         </motion.div>
       </div>
