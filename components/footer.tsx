@@ -8,9 +8,7 @@ import Image from 'next/image'
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
-  { label: 'Contact Us', href: '/contact' },
-  { label: 'Online Learning Platform', href: '/online-learning' },
-  { label: 'Privacy Policy', href: '/privacy' },
+
 ]
 
 const courses = [
@@ -19,7 +17,7 @@ const courses = [
   { label: 'IELTS Preparation', href: '/test-preparation/ielts' },
   { label: 'TEF Canada Preparation', href: '/test-preparation/tef-canada' },
   { label: 'TCF Canada Preparation', href: '/test-preparation/tcf-canada' },
-  { label: 'Online Classes', href: '/courses/online' },
+
 ]
 
 const socialLinks = [
@@ -188,14 +186,7 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Canadian International College. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Terms of Service
-              </Link>
-            </div>
+        
           </div>
         </div>
       </div>
