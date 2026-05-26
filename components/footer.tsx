@@ -21,10 +21,10 @@ const courses = [
 ]
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Youtube, href: '#', label: 'YouTube' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  // { icon: Facebook, href: '#', label: 'Facebook' },
+  // { icon: Instagram, href: '#', label: 'Instagram' },
+  // { icon: Youtube, href: '#', label: 'YouTube' },
+  // { icon: Linkedin, href: '#', label: 'LinkedIn' },
 ]
 
 const galleryImages = [
