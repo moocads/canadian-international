@@ -38,7 +38,7 @@ export function StudyInToronto() {
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin className="h-5 w-5" />
-                  <span className="font-semibold">Toronto, Ontario</span>
+                  <span className="font-semibold">Scarborough, Ontario</span>
                 </div>
                 <p className="text-white/90 text-sm">
                   One of the most multicultural cities in the world

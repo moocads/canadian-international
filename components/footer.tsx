@@ -33,7 +33,6 @@ const galleryImages = [
   '/images/footer-03.jpg',
   '/images/footer-04.jpg',
   '/images/footer-05.jpg',
-  '/images/footer-06.jpg'
 ]
 
 export function Footer() {
@@ -50,7 +49,7 @@ export function Footer() {
           {galleryImages.map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-1/3 md:w-1/6 aspect-square"
+              className="flex-shrink-0 w-1/5 md:w-1/5 aspect-square"
             >
               <div
                 className="w-full h-full bg-cover bg-center"
@@ -171,7 +170,7 @@ export function Footer() {
               <li>
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span>123 College Street, Suite 200, Toronto, Ontario, M5G 1L5</span>
+                  <span>2347 Kennedy Rd, Suite 505, Scarborough, ON M1T 3T8</span>
                 </div>
               </li>
             </ul>

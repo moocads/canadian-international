@@ -26,7 +26,8 @@ const navLinks = [
       { label: 'TCF Canada', href: '/test-preparation/tcf-canada' },
     ],
   },
-  { label: 'About', href: '/about' }
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export function Header() {
@@ -49,7 +50,7 @@ export function Header() {
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <span>Toronto, Ontario, Canada</span>
+            <span>Scarborough, Ontario, Canada</span>
           </div>
         </div>
       </div>

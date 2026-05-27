@@ -57,9 +57,9 @@ export function ContactSection() {
               <span>
                 <span className="block font-semibold">Location</span>
                 <span className="text-primary-foreground/80">
-                  123 College Street, Suite 200
+                  2347 Kennedy Rd, Suite 505
                   <br />
-                  Toronto, Ontario, M5G 1L5
+                  Scarborough, ON M1T 3T8
                 </span>
               </span>
             </li>
