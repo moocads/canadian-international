@@ -35,20 +35,20 @@ export function ContactSection() {
           <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
           <ul className="space-y-6">
             <li>
-              <a href="tel:+14165550123" className="flex items-center gap-4 hover:text-secondary transition-colors">
+              <a href="tel:+14373403549" className="flex items-center gap-4 hover:text-secondary transition-colors">
                 <Phone className="h-5 w-5 shrink-0" />
                 <span>
                   <span className="block font-semibold">Phone</span>
-                  <span className="text-primary-foreground/80">+1 (416) 555-0123</span>
+                  <span className="text-primary-foreground/80">+1 (437) 340-3549</span>
                 </span>
               </a>
             </li>
             <li>
-              <a href="mailto:info@cicollege.ca" className="flex items-center gap-4 hover:text-secondary transition-colors">
+              <a href="mailto:info@cilanguage.com" className="flex items-center gap-4 hover:text-secondary transition-colors">
                 <Mail className="h-5 w-5 shrink-0" />
                 <span>
                   <span className="block font-semibold">Email</span>
-                  <span className="text-primary-foreground/80">info@cicollege.ca</span>
+                  <span className="text-primary-foreground/80">info@cilanguage.com</span>
                 </span>
               </a>
             </li>

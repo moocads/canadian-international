@@ -151,20 +151,20 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+14165550123"
+                  href="tel:+14373403549"
                   className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span>+1 (416) 555-0123</span>
+                  <span>+1 (437) 340-3549</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@cicollege.ca"
+                  href="mailto:info@cilanguage.com"
                   className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span>info@cicollege.ca</span>
+                  <span>info@cilanguage.com</span>
                 </a>
               </li>
               <li>

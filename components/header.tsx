@@ -40,9 +40,9 @@ export function Header() {
       <div className="hidden md:block bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-secondary transition-colors">
+            <a href="tel:+14373403549" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Phone className="h-4 w-4" />
-              <span>+1 (416) 555-0123</span>
+              <span>+1 (437) 340-3549</span>
             </a>
             <a href="mailto:info@cicollege.ca" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Mail className="h-4 w-4" />

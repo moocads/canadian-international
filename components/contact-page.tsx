@@ -68,10 +68,10 @@ export function ContactPage() {
                   <div>
                     <div className="font-semibold text-foreground">Phone</div>
                     <a
-                      href="tel:+14165550123"
+                      href="tel:+14373403549"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +1 (416) 555-0123
+                      +1 (437) 340-3549
                     </a>
                   </div>
                 </div>
@@ -83,10 +83,10 @@ export function ContactPage() {
                   <div>
                     <div className="font-semibold text-foreground">Email</div>
                     <a
-                      href="mailto:info@cicollege.ca"
+                      href="mailto:info@cilanguage.com"
                       className="text-muted-foreground hover:text-primary transition-colors break-all"
                     >
-                      info@cicollege.ca
+                      info@cilanguage.com
                     </a>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export function ContactPage() {
                     id="phone"
                     type="tel"
                     className="block w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none ring-offset-background focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                    placeholder="+1 (416) 555-0123"
+                    placeholder="+1 (437) 340-3549"
                   />
                 </div>
 
